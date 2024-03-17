@@ -5,8 +5,18 @@ local shell = import("micro/shell")
 local filepath = import("path/filepath")
 local micro = import("micro")
 
-local fmtCommands = {}
-fmtCommands["javascript"] = "prettier --write --log-level silent"
+local commonCommand = "prettier --write --log-level silent"
+
+local fmtCommands = {
+    javascript = commonCommand,
+    jsx = commonCommand,
+    typescript = commonCommand,
+    css = commonCommand,
+    html = commonCommand,
+    json = commonCommand,
+    markdown = commonCommand,
+    yaml = commonCommand
+}
 
 function init()
     config.RegisterCommonOption("prettier", "onsave", true)
