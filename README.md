@@ -1,33 +1,31 @@
-# micro-autofmt
+# prettier
 
-> Multi-language formatting plugin for the [Micro editor](https://github.com/zyedidia/micro)
+Prettier formatter plugin for Micro Editor
 
 ## Setup
 
-- `git clone` and `make`
-- Install whichever formatters you want to use
+1. clone
+	```shell
+	git clone https://github.com/claromes/micro-prettier.git
+	```
+2.  make
+	```shell
+	cd micro-prettier && make
+	```
 
 ## Usage
 
-- Run `fmt` to format the current file.
-- Files will be formatted on save, unless `fmt-onsave` is set to false (with `Ctrl-e > set fmt-onsave false`).
-
-## Supported formatters
-
-| Language | Formatter    |
-| :------- | :----------- |
-| C/C++/C# | [clang-format](https://clang.llvm.org/docs/ClangFormat.html) |
-| Python   | [yapf](https://github.com/google/yapf) |
-| Racket   | [fmt](https://docs.racket-lang.org/fmt/index.html) |
-| JavaScript | [prettier](https://prettier.io/) |
-| Rust | [rustfmt nightly](https://github.com/rust-lang/rustfmt) |
+- Files will be formatted on save, unless `onsave` is set to false (with `Ctrl+e` > `set prettier.onsave false`).
+- Run `prettier` to format the current file.
 
 ## Credits
 
-This project is intended as a replacement for the now-dead [fmt-micro](https://github.com/sum01/fmt-micro). o7
+This project is a fork of `micro-autofmt` by [@a11ce](https://github.com/a11ce/micro-autofmt)
 
---- 
+## Contributions
 
 All contributions are welcome by pull request or issue.
 
-micro-autofmt is licensed under the GNU General Public License v3.0. See [LICENSE](../main/LICENSE) for full text.
+## License
+
+Licensed under the GNU General Public License v3.0. See [LICENSE](../main/LICENSE) for full text.
