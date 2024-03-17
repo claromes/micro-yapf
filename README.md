@@ -6,7 +6,7 @@ Prettier formatter plugin for Micro Editor
 
 1. clone
 	```shell
-	git clone https://github.com/claromes/micro-prettier.git
+	git clone git@github.com:claromes/micro-prettier.git
 	```
 2.  make
 	```shell
