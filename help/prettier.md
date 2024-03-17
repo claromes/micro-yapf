@@ -1,4 +1,4 @@
-# micro-autofmt
+# prettier
 
-- Run `fmt` to format the current file.
-- Files will be formatted on save, unless `fmt-onsave` is set to false.
+- Files will be formatted on save, unless `onsave` is set to false (with `Ctrl+e` > `set prettier.onsave false`).
+- Run `prettier` to format the current file.
