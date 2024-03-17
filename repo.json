@@ -1,15 +1,17 @@
-[{
-  "Name": "prettier",
-  "Description": "Prettier formatter plugin for Micro Editor",
-  "Website": "https://github.com/claromes/micro-prettier",
-  "Tags": ["prettier", "formatter"],
-  "Versions": [
-    {
-      "Version": "1.0.0",
-      "Url": "https://github.com/claromes/micro-prettier/archive/1.0.0.zip",
-      "Require": {
-        "micro": ">=2.0.8"
+[
+  {
+    "Name": "prettier",
+    "Description": "Prettier Formatter plugin for Micro Editor",
+    "Website": "https://github.com/claromes/micro-prettier",
+    "Tags": ["prettier", "formatter"],
+    "Versions": [
+      {
+        "Version": "1.0.0",
+        "Url": "https://github.com/claromes/micro-prettier/archive/1.0.0.zip",
+        "Require": {
+          "micro": ">=2.0.13"
+        }
       }
-    }
-  ]
-}]
+    ]
+  }
+]
