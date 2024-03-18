@@ -1,6 +1,4 @@
-# prettier
-
-Prettier Formatter plugin for Micro Editor
+# Prettier Formatter plugin for Micro Editor
 
 ## Installation
 
@@ -21,9 +19,7 @@ Prettier Formatter plugin for Micro Editor
 
 ## Support for:
 
-- JavaScript
-- JSX
-- TypeScript
+- JavaScript/JSX/TypeScript
 - CSS/SCSS
 - HTML
 - JSON

@@ -7,9 +7,7 @@
 
 ## Support for:
 
-- JavaScript
-- JSX
-- TypeScript
+- JavaScript/JSX/TypeScript
 - CSS/SCSS
 - HTML
 - JSON
