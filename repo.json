@@ -1,13 +1,13 @@
 [
   {
-    "Name": "prettier",
-    "Description": "Prettier Formatter plugin for Micro Editor",
-    "Website": "https://github.com/claromes/micro-prettier",
-    "Tags": ["prettier", "formatter"],
+    "Name": "yapf",
+    "Description": "YAPF Formatter plugin for Micro Editor",
+    "Website": "https://github.com/claromes/micro-yapf",
+    "Tags": ["yapf", "python", "formatter"],
     "Versions": [
       {
         "Version": "1.0.0",
-        "Url": "https://github.com/claromes/micro-prettier/archive/1.0.0.zip",
+        "Url": "https://github.com/claromes/micro-yapf/archive/1.0.0.zip",
         "Require": {
           "micro": ">=2.0.13"
         }

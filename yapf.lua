@@ -5,27 +5,17 @@ local shell = import("micro/shell")
 local filepath = import("path/filepath")
 local micro = import("micro")
 
-local commonCommand = "prettier --write --log-level silent"
-
-local fmtCommands = {
-    javascript = commonCommand,
-    jsx = commonCommand,
-    typescript = commonCommand,
-    css = commonCommand,
-    html = commonCommand,
-    json = commonCommand,
-    markdown = commonCommand,
-    yaml = commonCommand
-}
+local fmtCommands = {}
+fmtCommands["python"] = "yapf -i"
 
 function init()
-    config.RegisterCommonOption("prettier", "onsave", true)
-    config.MakeCommand("prettier", tryFmt, config.NoComplete)
-    config.AddRuntimeFile("prettier", config.RTHelp, "help/prettier.md")
+    config.RegisterCommonOption("yapf", "onsave", true)
+    config.MakeCommand("yapf", tryFmt, config.NoComplete)
+    config.AddRuntimeFile("yapf", config.RTHelp, "help/yapf.md")
 end
 
 function onSave(bp)
- 	if bp.Buf.Settings["prettier.onsave"] == false then
+ 	if bp.Buf.Settings["yapf.onsave"] == false then
     	return
     end
     tryFmt(bp)
